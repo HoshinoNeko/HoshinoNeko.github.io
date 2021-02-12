@@ -66,4 +66,6 @@ exclude: null
 ignore: null
 theme: icarus
 deploy:
-  type: ''
+  type: git
+  respository: git@github.com:HoshinoNeko/HoshinoNeko.github.io.git
+  branch: docs
