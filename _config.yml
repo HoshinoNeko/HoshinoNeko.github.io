@@ -52,10 +52,11 @@ disqus:
   enable: true
   shortname: 'hoshinoneko'
   count: true
-deploy:
-  type: git
-  respository: git@github.com:HoshinoNeko/HoshinoNeko.github.io.git
-  branch: docs
+  deploy:
+    type: git
+    respository: git@github.com:HoshinoNeko/HoshinoNeko.github.io.git
+    branch: docs
+    message: Site Update at `date "+%Y-%m-%d %H:%M:%S"`
   
 default_category: uncategorized
 category_map: null
