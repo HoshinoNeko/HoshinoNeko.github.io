@@ -52,6 +52,11 @@ disqus:
   enable: true
   shortname: 'hoshinoneko'
   count: true
+deploy:
+  type: git
+  respository: git@github.com:HoshinoNeko/HoshinoNeko.github.io.git
+  branch: docs
+  
 default_category: uncategorized
 category_map: null
 tag_map: null
@@ -65,7 +70,3 @@ include: null
 exclude: null
 ignore: null
 theme: icarus
-deploy:
-  type: git
-  respository: git@github.com:HoshinoNeko/HoshinoNeko.github.io.git
-  branch: docs
