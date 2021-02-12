@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forwarder</title>
+    <script>
+        var url = document.location.toString()
+        var urlsplit=url.split('?')
+        var par=urlsplit[1].split('&')
+        var obj={}
+        for(i=0;i<par.length;i++){
+            var p=par[i].split('=')
+            obj[p[0]]=p[1]
+        }
+        var goto = obj.url;
+        count=document.getElementById('count');
+        a=3;
+        sobj=setInterval(function(){
+            var num;
+            num=--a;
+            if(num<=0){
+                clearInterval(sobj);
+                location=goto;
+            }
+            //count.innerHTML=num;
+        },1000);
+        //url=document.getElementById('url')
+        //url.innerHTML=goto;
+    </script>
+</head>
+<body>
+<h1>将在<span id="count">3</span>秒内为您跳转<span id="url"></span></h1>
+</body>
+</html>
