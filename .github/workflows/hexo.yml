@@ -7,19 +7,20 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
 
     steps:
       - name: Checkout source
         uses: actions/checkout@v2
         with:
+          repository: HoshinoNeko/HoshinoNeko.github.io
           ref: main
 
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: '12'
+          node-version: '15.8.0'
 
       - name: Setup Hexo
         env:
