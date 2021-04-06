@@ -97,7 +97,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -106,5 +106,5 @@ deploy:
   repo: ${DEPLOY_REPO}
   branch: ${DEPLOY_BRANCH}
   token ${GITHUB_TOKEN}
-  name: GITHUB_ACTION
-  email: action@github.com
+  name: 'GITHUB ACTION'
+  email: 'action@github.com'
