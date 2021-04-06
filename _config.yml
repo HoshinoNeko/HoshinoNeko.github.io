@@ -106,6 +106,6 @@ deploy:
   repo: ${DEPLOY_REPO}
   branch: ${DEPLOY_BRANCH}
   token ${GITHUB_TOKEN}
-  message: ${COMMIT_MESSAGE} 
+  message: Updated By Actions at {{ now('YYYY-MM-DD HH:mm:ss') }} 
   name: GITHUB_ACTION
   email: action@github.com
