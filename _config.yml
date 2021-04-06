@@ -103,7 +103,7 @@ theme: next
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: 'git'
-  repo: ${DEPLOY_REPO}
+  repo: https://github.com/${DEPLOY_REPO}
   branch: ${DEPLOY_BRANCH}
   token: ${GITHUB_TOKEN}
   name: GITHUB ACTIONS[bot]
