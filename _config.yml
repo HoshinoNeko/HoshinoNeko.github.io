@@ -105,4 +105,4 @@ deploy:
   type: 'git'
   repo: ${DEPLOY_REPO}
   branch: ${DEPLOY_BRANCH}
-  token ${GITHUB_TOKEN}
+  token: ${GITHUB_TOKEN}
