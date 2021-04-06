@@ -103,9 +103,9 @@ theme: landscape
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: 'git'
-  repo: https://github/HoshinoNeko/HoshinoNeko.github.io
-  branch: docs
+  repo: ${DEPLOY_REPO}
+  branch: ${DEPLOY_BRANCH}
   token ${GITHUB_TOKEN}
-  message: 
+  message: ${COMMIT_MESSAGE} 
   name: GITHUB_ACTION
   email: action@github.com
