@@ -106,5 +106,3 @@ deploy:
   repo: ${DEPLOY_REPO}
   branch: ${DEPLOY_BRANCH}
   token ${GITHUB_TOKEN}
-  name: 'GITHUB ACTION'
-  email: 'action@github.com'
