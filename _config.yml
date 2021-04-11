@@ -103,7 +103,7 @@ theme: next
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: 'git'
-  repo: ${env.DEPLOY_REPO},${env.DEPLOY_BRANCH}
-  token: ${env.GITHUB_TOKEN}
-  name: ${env.COMMIT_NAME}
-  email: ${env.COMMIT_EMAIL}
+  repo: ${DEPLOY_REPO},${DEPLOY_BRANCH}
+  token: ${GITHUB_TOKEN}
+  name: ${COMMIT_NAME}
+  email: ${COMMIT_EMAIL}
