@@ -25,7 +25,6 @@ jobs:
         DEPLOY_BRANCH: gh-pages
         COMMIT_USER: "GITHUB ACTIONS[Bot]"
         COMMIT_EMAIL: 21078047+HoshinoNeko@users.noreply.github.com
-        COMMIT_MESSAGE: "Updated By Actions at `date +'%Y-%M-%D %H:%M:%S'`"
         PUBLISH_DIR: ./public # The folder the action should deploy.
       run: |
         npm install hexo-cli -g
@@ -40,7 +39,7 @@ jobs:
         git add .
         git config user.name ${COMMIT_USER}
         git config user.email ${COMMIT_EMAIL}
-        git commit -m "${COMMIT_MESSAGE}"
+        git commit -m "Updated by Actions at `date +'%Y-%M-%D %H:%M:%S'`"
         git branch -M ${DEPLOY_BRANCH}
         git remote add origin https://HoshinoNeko:${GITHUB_TOKEN}@github.com/${DEPLOY_REPO}
         git push -u -f origin ${DEPLOY_BRANCH}
