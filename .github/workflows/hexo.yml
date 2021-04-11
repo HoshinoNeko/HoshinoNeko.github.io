@@ -32,5 +32,5 @@ jobs:
         npm install hexo-deployer-git --save
         npm install
         hexo clean
-        git config --global user.name ${env.COMMIT_NAME}
+        git config --global user.name '${env.COMMIT_NAME}'
         hexo deploy
