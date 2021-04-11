@@ -36,6 +36,7 @@ jobs:
         hexo generate
         cd public
         git init
+        cp ../CNAME CNAME
         git add .
         git config user.name ${COMMIT_USER}
         git config user.email ${COMMIT_EMAIL}
