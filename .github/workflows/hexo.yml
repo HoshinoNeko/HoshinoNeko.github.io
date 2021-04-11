@@ -41,5 +41,5 @@ jobs:
         git config user.email ${COMMIT_EMAIL}
         git commit -M 'Updated By Actions at '{{ now('YYYY-MM-DD HH:mm:ss') }}
         git branch -M gh-pages
-        git remote add origin https://HoshinoNeko:${GITHUB_TOKEN}@github.com/${DEPLOY_REPO}
-        git push -u origin ${DEPLOY_BRANCH}
+        git remote add origin https://HoshinoNeko:${GITHUB_TOKEN}@github.com/HoshinoNeko/HoshinoNeko.github.io.git
+        git push -u origin gh-pages
