@@ -43,4 +43,4 @@ jobs:
         git commit -m "Updated By Actions at `now('YYYY-MM-DD HH:mm:ss')`"
         git branch -M gh-pages
         git remote add origin https://HoshinoNeko:${GITHUB_TOKEN}@github.com/HoshinoNeko/HoshinoNeko.github.io.git
-        git push -u -f origin gh-pages
+        git push -u origin gh-pages
