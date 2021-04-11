@@ -23,6 +23,8 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         DEPLOY_REPO: HoshinoNeko/HoshinoNeko.github.io # The repository the action should deploy to.
         DEPLOY_BRANCH: docs  # The branch the action should deploy to.
+        COMMIT_NAME: "GITHUB ACTIONS[Bot]"
+        COMMIT_EMAIL: "21078047+HoshinoNeko@users.noreply.github.com"
         COMMIT_MESSAGE: Updated By Actions at {{ now('YYYY-MM-DD HH:mm:ss') }}
         PUBLISH_DIR: ./public # The folder the action should deploy.
       run: |
