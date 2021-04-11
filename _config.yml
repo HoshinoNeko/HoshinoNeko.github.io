@@ -103,7 +103,7 @@ theme: next
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: 'git'
-  repo: https://HoshinoNeko:{GITHUB_TOKEN}@github.com/HoshinoNeko/HoshinoNeko.github.io.git,gh-pages
+  repo: https://HoshinoNeko:{GITHUB_TOKEN}@github.com/HoshinoNeko/HoshinoNeko.github.io,gh-pages
   token: ${GITHUB_TOKEN}
   name: ${COMMIT_NAME}
   email: ${COMMIT_EMAIL}
