@@ -23,7 +23,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         DEPLOY_REPO: HoshinoNeko/HoshinoNeko.github.io
         DEPLOY_BRANCH: gh-pages  # The branch the action should deploy to.
-        COMMIT_NAME: GITHUB ACTIONS[Bot]
+        COMMIT_USER: GITHUB ACTIONS[Bot]
         COMMIT_EMAIL: 21078047+HoshinoNeko@users.noreply.github.com
         COMMIT_MESSAGE: Updated By Actions at {{ now('YYYY-MM-DD HH:mm:ss') }}
         PUBLISH_DIR: ./public # The folder the action should deploy.
@@ -33,4 +33,12 @@ jobs:
         npm install hexo-theme-next
         npm install
         hexo clean
-        hexo deploy
+        hexo generate
+        cd public
+        git init
+        git add .
+        git config user.name=${COMMIT_USER}
+        git config user.email=${COMMIT_EMAIL}
+        git branch -M ${DEPLOY_BRANCH}
+        git remote add origin https://HoshinoNeko:${GITHUB_TOKEN}@github.com/${DEPLOY_REPO}
+        git push -u origin ${DEPLOY_BRANCH}
