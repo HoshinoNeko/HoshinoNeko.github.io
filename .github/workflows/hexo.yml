@@ -22,7 +22,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         DEPLOY_REPO: HoshinoNeko/HoshinoNeko.github.io
-        DEPLOY_BRANCH: gh-pages  # The branch the action should deploy to.
+        DEPLOY_BRANCH: gh-pages
         COMMIT_USER: "GITHUB ACTIONS[Bot]"
         COMMIT_EMAIL: 21078047+HoshinoNeko@users.noreply.github.com
         COMMIT_MESSAGE: "Updated By Actions at {{ now('YYYY-MM-DD HH:mm:ss') }}"
