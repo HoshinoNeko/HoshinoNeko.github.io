@@ -33,7 +33,6 @@ jobs:
         git clone https://HoshinoNeko:${GITHUB_TOKEN}@github.com/${DEPLOY_REPO} public
         hexo generate
         cd public
-        git init
         cp ../CNAME CNAME
         git add .
         git config user.name ${COMMIT_USER}
