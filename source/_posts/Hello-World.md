@@ -8,3 +8,4 @@ I'm back again and start to use Hexo as my static as my blog.
 It's a very easy to start and keep running continally.
 You can just view the blog repo [HoshinoNeko.github.io](Github://HoshinoNeko/HoshinoNeko.github.io) and change some configuration to run your blog too.
 After all, I'm back and will update some posts about Daily Dev :)
+Happy to see you!
