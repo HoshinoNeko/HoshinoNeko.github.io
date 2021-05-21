@@ -30,7 +30,7 @@ jobs:
         npm install hexo-cli -g
         npm install hexo-deployer-git --save
         hexo clean
-        git clone https://HoshinoNeko:${GITHUB_TOKEN}@github.com/${DEPLOY_REPO} public
+        git clone -b $DEPLOY_BRANCH https://HoshinoNeko:${GITHUB_TOKEN}@github.com public
         hexo generate
         cd public
         cp ../CNAME CNAME
