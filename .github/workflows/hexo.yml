@@ -30,6 +30,7 @@ jobs:
         npm install hexo-cli -g
         npm install hexo-deployer-git --save
         hexo clean
+        git clone https://HoshinoNeko:${GITHUB_TOKEN}@github.com/${DEPLOY_REPO} public
         hexo generate
         cd public
         git init
@@ -39,5 +40,5 @@ jobs:
         git config user.email ${COMMIT_EMAIL}
         git commit -m "Updated by Actions at `date +'%Y-%m-%d %H:%M:%S'`"
         git branch -M ${DEPLOY_BRANCH}
-        git remote add origin https://HoshinoNeko:${GITHUB_TOKEN}@github.com/${DEPLOY_REPO}
-        git push -u -f origin ${DEPLOY_BRANCH}
+        #git remote add origin https://HoshinoNeko:${GITHUB_TOKEN}@github.com/${DEPLOY_REPO}
+        git push -u origin ${DEPLOY_BRANCH}
