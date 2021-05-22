@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://cheng.pet/about/index.html</loc>
+    
+    <lastmod>2021-05-22</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://cheng.pet/2021/05/22/Hello-World/</loc>
     
     <lastmod>2021-05-22</lastmod>
@@ -9,7 +16,7 @@
   </url>
   
   <url>
-    <loc>https://cheng.pet/about/index.html</loc>
+    <loc>https://cheng.pet/2021/05/22/untitled-20210522/</loc>
     
     <lastmod>2021-05-22</lastmod>
     
@@ -23,6 +30,13 @@
     <priority>1.0</priority>
   </url>
 
+  
+  <url>
+    <loc>https://cheng.pet/tags/untitled/</loc>
+    <lastmod>2021-05-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
   
 
   
