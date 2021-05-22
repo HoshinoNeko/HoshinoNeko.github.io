@@ -598,7 +598,7 @@ disqusjs:
   # api: https://disqus.skk.moe/disqus/
   api: https://disqusjs.hoshino.us/
   apikey: p3KIcz5m7MKJ5z6kYijIMHR89Pt6tQAgVvm9CXKBY4URqzPODQdPA1tPPDDHCPb9 # Register new application from https://disqus.com/api/applications/
-  shortname: FieldHoshino # See: https://disqus.com/admin/settings/general/
+  shortname: fieldhoshino # See: https://disqus.com/admin/settings/general/
 
 # Changyan
 # For more information: https://changyan.kuaizhan.com
