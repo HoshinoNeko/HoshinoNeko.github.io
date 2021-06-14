@@ -4,5 +4,7 @@ date: 2021-06-14 16:54:35
 tags:
 ---
 ```
-sudo gpasswd -a `whoami` wireshark && sudo chgrp wireshark /usr/bin/dumpcap && sudo chmod 4755 /usr/bin/dumpcap
+sudo gpasswd -a `whoami` wireshark # Add current user to group wireshart
+sudo chgrp wireshark /usr/bin/dumpcap # Update group of file /usr/bin/dumpcap to chgrp
+sudo chmod 4755 /usr/bin/dumpcap # Update permission of /usr/bin/dumpcap to 4755
 ```
