@@ -4,6 +4,7 @@ date: 2021-10-25 21:05:28
 tags: vps
 ---
 Lemonbench full test result [https://paste.ubuntu.com/p/BSZsnpQPgT](https://paste.ubuntu.com/p/BSZsnpQPgT)
+<!-- more -->
 ```bash
 LemonBench Linux System Benchmark Utility Version 20201005 Intl BetaVersion 
  
