@@ -2,13 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://cheng.pet/2021/05/22/Basic-command-on-Windows-Server/</loc>
-    
-    <lastmod>2022-03-24</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://cheng.pet/2021/05/22/Hello-World/</loc>
     
     <lastmod>2022-03-24</lastmod>
@@ -52,6 +45,13 @@
   
   <url>
     <loc>https://cheng.pet/about/index.html</loc>
+    
+    <lastmod>2022-03-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://cheng.pet/2021/05/22/Basic-command-on-Windows-Server/</loc>
     
     <lastmod>2022-03-24</lastmod>
     
