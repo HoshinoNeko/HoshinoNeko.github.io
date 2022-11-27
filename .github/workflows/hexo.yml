@@ -16,6 +16,7 @@ jobs:
       with:
         repository: HoshinoNeko/HoshinoNeko.github.io
         ref: master
+        fetch-depth: 0
 
     - name: Restore file modification time
       run: |
